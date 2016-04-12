@@ -5,7 +5,9 @@
       "É problema da API!",
       "Isso só acontece no retina...",
       "Foi o Pepe que fez isso ai...",
-      "Is this a baby? No, it's a dog"
+      "Is this a baby? No, it's a dog",
+      "Putz, no angular é diferente, é melhor mudar a API e o layout",
+      "É melhor a API mandar tudo"
   ];
 
   function getRandomExcuse() {
