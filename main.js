@@ -5,7 +5,8 @@
       "É problema da API!",
       "Isso só acontece no retina...",
       "Foi o Pepe que fez isso ai...",
-      "Is this a baby? No, it's a dog"
+      "Is this a baby? No, it's a dog",
+      "Porra Pepe!!!"
   ];
 
   function getRandomExcuse() {
