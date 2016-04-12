@@ -7,6 +7,7 @@
       "Foi o Pepe que fez isso ai...",
       "Is this a baby? No, it's a dog",
       "Putz, no angular é diferente, é melhor mudar a API e o layout",
+      "Porra Pepe!!!"
       "É melhor a API mandar tudo"
   ];
 
