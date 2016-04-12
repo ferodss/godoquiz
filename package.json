@@ -1,0 +1,6 @@
+{
+    "name": "Godoquiz",
+    "dependencies": {
+        "harp": "*"
+    }
+}
