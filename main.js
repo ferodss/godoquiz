@@ -9,7 +9,7 @@
   ];
 
   function getRandomExcuse() {
-    return randomExcuses[Math.floor(Math.random() * randomExcuses.length)];
+    return randomExcuses[Math.round(Math.random() * randomExcuses.length)];
   }
 
   $.fn.fadeTo = function(target) {
