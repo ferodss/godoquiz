@@ -4,7 +4,8 @@
       "É problema de cache, limpa o cache do seu navegador...",
       "É problema da API!",
       "Isso só acontece no retina...",
-      "Foi o Pepe que fez isso ai..."
+      "Foi o Pepe que fez isso ai...",
+      "Is this a baby? No, it's a dog"
   ];
 
   function getRandomExcuse() {
