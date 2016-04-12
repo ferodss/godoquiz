@@ -3,7 +3,8 @@
   var randomExcuses = [
       "É problema de cache, limpa o cache do seu navegador...",
       "É problema da API!",
-      "Isso só acontece no retina..."
+      "Isso só acontece no retina...",
+      "Foi o Pepe que fez isso ai..."
   ];
 
   function getRandomExcuse() {
