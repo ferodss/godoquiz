@@ -8,9 +8,14 @@
       "Is this a baby? No, it's a dog",
       "Putz, no angular é diferente, é melhor mudar a API e o layout",
       "Porra Pepe!!!",
-      "É melhor a API mandar tudo"
+      "Se ta no lixo é meu",
+      "Isso não é impeditivo para subir",
+      "Já está em live, né? Então, pode deixar para depois",
+      "Ah, não tem tela",
+      "Isso acontece, pq não é mobile first",
+      "É melhor a API mandar tudo",
+      "Ta assim desde a primeira versão"
   ];
-
   function getRandomExcuse() {
     return randomExcuses[Math.round(Math.random() * randomExcuses.length)];
   }
