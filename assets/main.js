@@ -38,7 +38,7 @@
   };
 
   function getRandomExcuse() {
-    return randomExcuses[language] [Math.round(Math.random() * randomExcuses[language].length)];
+    return randomExcuses[language][Math.round(Math.random() * randomExcuses[language].length)];
   }
 
   $.fn.fadeTo = function(target) {
@@ -55,8 +55,12 @@
     }
   });
 
-  $(".language").click(function(a) {
+  $(".languages span").click(function(a) {
+    $(".languages span").removeClass("active");
+    $(a.target).addClass("active");
+
     language = a.target.id;
+
     $("h1").fadeTo(getRandomExcuse());
     changeAvatar();
   }); 

@@ -185,15 +185,6 @@ a {
     vertical-align: middle
 }
 
-.languages {
-    
-}
-
-.languages .language{
-    display: table-cell;
-    padding: 10px;
-}
-
 h1 {
     font-size: 44px;
     font-weight: 200;
@@ -543,6 +534,22 @@ footer .modal-toggle.toggled .dot3 {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
+}
+
+.languages {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.languages span {
+    cursor: pointer;
+    display: table-cell;
+    padding: 0 10px;
+}
+
+.languages span:hover, .languages span.active {
+    color: #a0ce6f;
 }
 
 .dotted-paper-popover {
