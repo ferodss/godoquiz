@@ -463,7 +463,6 @@ footer .modal-toggle.toggled .dot3 {
 }
 
 #cry:before {
-    background-image: url(images/doge.png);
     position: absolute;
     bottom: -999999px;
     left: -9999999px;
