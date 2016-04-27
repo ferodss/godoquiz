@@ -76,13 +76,28 @@
     $(".toggle").toggleClass("toggled");
     $(".avatar").toggleClass("visible");
 
+    playCrySound ("assets/chaves.mp3");
     changeAvatar();
   });
+
+  function playCrySound (filePath)
+  {
+    if ($(".toggle").hasClass ("toggled")) {
+      $("body").append('<audio class="cry-audio" id="cry-audio"><source src='+ filePath +' type="audio/mpeg"></source></audio>');
+      var cryAudio = $(".cry-audio").get(0);
+      cryAudio.loop = true;
+      cryAudio.play();
+    } else {
+      $(".cry-audio").get(0).pause();
+      $(".cry-audio").remove();
+    }
+  }
 
   function changeAvatar () {
     var gif = language === "PT" ? 'crymode.gif' : 'elbito_crymode.gif';
     $(".avatar").css('background-image', 'url(assets/' + gif + ')');
   }
+
   $("h1").fadeTo(getRandomExcuse());
 
   $("body").toasty({
