@@ -16,6 +16,7 @@
       "É melhor a API mandar tudo",
       "Ta assim desde a primeira versão"
   ];
+
   function getRandomExcuse() {
     return randomExcuses[Math.round(Math.random() * randomExcuses.length)];
   }
@@ -39,6 +40,11 @@
 
     var b = encodeURIComponent('"' + $("h1").html() + '" - Gere a sua desculpa completamente aleatória no');
     window.open("http://twitter.com/share?url=" + location.href + "&text=" + b + "&related=ferodss&", "twitterwindow", "height=450, width=550, top=" + ($(window).height() / 2 - 225) + ", left=" + $(window).width() / 2 + ", toolbar=0, location=0, menubar=0, directories=0, scrollbars=0")
+  });
+
+  $(".toggle .inner").click(function(e) {
+    $(".toggle").toggleClass("toggled");
+    $(".avatar").toggleClass("visible");
   });
 
   $("h1").fadeTo(getRandomExcuse());

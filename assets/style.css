@@ -454,7 +454,7 @@ footer .modal-toggle.toggled .dot3 {
     color: #444444
 }
 
-#drake {
+#cry {
     position: absolute;
     bottom: 40px;
     right: 40px;
@@ -462,7 +462,7 @@ footer .modal-toggle.toggled .dot3 {
     color: #CCCCCC
 }
 
-#drake:before {
+#cry:before {
     background-image: url(images/doge.png);
     position: absolute;
     bottom: -999999px;
@@ -470,7 +470,7 @@ footer .modal-toggle.toggled .dot3 {
     content: ''
 }
 
-#drake .toggle {
+#cry .toggle {
     -webkit-border-radius: 36px;
     border-radius: 36px;
     position: relative;
@@ -484,7 +484,7 @@ footer .modal-toggle.toggled .dot3 {
     display: inline-block
 }
 
-#drake .toggle .inner {
+#cry .toggle .inner {
     width: 36px;
     -webkit-border-radius: 100%;
     border-radius: 100%;
@@ -503,7 +503,7 @@ footer .modal-toggle.toggled .dot3 {
     transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 
-#drake .toggle:before {
+#cry .toggle:before {
     width: 100%;
     height: 100%;
     -webkit-border-radius: 36px;
@@ -524,12 +524,12 @@ footer .modal-toggle.toggled .dot3 {
     transform: scale(0)
 }
 
-#drake .toggle.toggled .inner {
+#cry .toggle.toggled .inner {
     left: 100%;
     margin-left: -36px
 }
 
-#drake .toggle.toggled:before {
+#cry .toggle.toggled:before {
     -moz-transform: scale(1);
     -webkit-transform: scale(1);
     -o-transform: scale(1);
