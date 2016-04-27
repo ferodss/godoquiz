@@ -81,4 +81,13 @@
   }
   $("h1").fadeTo(getRandomExcuse());
 
+  $("body").toasty({
+    image: "assets/toasty.png",
+    sound: "assets/toasty.mp3"
+  });
+
+  var konami = new Konami(function() {
+    $("body").toasty('pop');
+  });
+
 })(jQuery);
