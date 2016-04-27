@@ -177,12 +177,21 @@ a {
     height: 100%;
     display: table;
     text-align: center;
-    position: absolute
+    position: absolute;
 }
 
 .table .cell {
     display: table-cell;
     vertical-align: middle
+}
+
+.languages {
+    
+}
+
+.languages .language{
+    display: table-cell;
+    padding: 10px;
 }
 
 h1 {

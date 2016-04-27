@@ -1,6 +1,9 @@
 (function($) {
 
-  var randomExcuses = [
+  var language = "PT";
+
+  var randomExcuses = {
+    "PT" : [
       "É problema de cache, limpa o cache do seu navegador...",
       "É problema da API!",
       "Isso só acontece no retina...",
@@ -15,10 +18,27 @@
       "Isso acontece, pq não é mobile first",
       "É melhor a API mandar tudo",
       "Ta assim desde a primeira versão"
-  ];
+    ],
+    "ES" : [
+      "Es un problema de caché, borrar la caché del navegador ...", 
+      "Es el problema de la API!", 
+      "Eso sólo sucede en la retina ...",
+      "Fue Pepe quién lo hizo allí ...",
+      "es este un bebé? no, es un perro ",
+      "Putz, el ángulo es diferente, lo mejor es cambiar el API y el diseño ",
+      "Maldita sea !!! Pepe ",
+      "Ra Si la basura es mío ",
+      "Que no lo hace esto disminuye al aumentar ",
+      "Es vivo, ¿verdad? Así, se puede dejar para más adelante ",
+      "Oh, no hay pantalla ",
+      "Sucede, porque simplemente no es móvil en primer lugar ",
+      "Mejor la API de enviar todos", 
+      "Ta así desde la primera versión"
+    ]
+  };
 
   function getRandomExcuse() {
-    return randomExcuses[Math.round(Math.random() * randomExcuses.length)];
+    return randomExcuses[language] [Math.round(Math.random() * randomExcuses[language].length)];
   }
 
   $.fn.fadeTo = function(target) {
@@ -35,6 +55,12 @@
     }
   });
 
+  $(".language").click(function(a) {
+    language = a.target.id;
+    $("h1").fadeTo(getRandomExcuse());
+    changeAvatar();
+  }); 
+
   $(".tweet").click(function(a) {
     a.preventDefault();
 
@@ -45,8 +71,14 @@
   $(".toggle .inner").click(function(e) {
     $(".toggle").toggleClass("toggled");
     $(".avatar").toggleClass("visible");
+
+    changeAvatar();
   });
 
+  function changeAvatar () {
+    var gif = language === "PT" ? 'crymode.gif' : 'elbito_crymode.gif';
+    $(".avatar").css('background-image', 'url(assets/' + gif + ')');
+  }
   $("h1").fadeTo(getRandomExcuse());
 
 })(jQuery);
