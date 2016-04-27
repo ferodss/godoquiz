@@ -76,13 +76,13 @@
     $(".toggle").toggleClass("toggled");
     $(".avatar").toggleClass("visible");
 
-    playCrySound ("assets/chaves.mp3");
+    playCrySound ("assets/chaves.mp3", $(".toggle").hasClass ("toggled"));
     changeAvatar();
   });
 
-  function playCrySound (filePath)
+  function playCrySound (filePath, play)
   {
-    if ($(".toggle").hasClass ("toggled")) {
+    if (play) {
       $("body").append('<audio class="cry-audio" id="cry-audio"><source src='+ filePath +' type="audio/mpeg"></source></audio>');
       var cryAudio = $(".cry-audio").get(0);
       cryAudio.loop = true;
