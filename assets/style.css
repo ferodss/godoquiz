@@ -658,3 +658,9 @@ footer .modal-toggle.toggled .dot3 {
 .dotted-paper-popover .dotted-paper-button:hover {
     background: #cf5a3f
 }
+
+.konami {
+    position: absolute;
+    left:35px;
+    bottom:35px;
+}
