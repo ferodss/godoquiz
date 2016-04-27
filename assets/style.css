@@ -177,7 +177,7 @@ a {
     height: 100%;
     display: table;
     text-align: center;
-    position: absolute
+    position: absolute;
 }
 
 .table .cell {
@@ -534,6 +534,22 @@ footer .modal-toggle.toggled .dot3 {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
+}
+
+.languages {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.languages span {
+    cursor: pointer;
+    display: table-cell;
+    padding: 0 10px;
+}
+
+.languages span:hover, .languages span.active {
+    color: #a0ce6f;
 }
 
 .dotted-paper-popover {
