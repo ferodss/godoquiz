@@ -94,4 +94,8 @@
     $("body").toasty('pop');
   });
 
+  window.setInterval(function() {
+    $("h1").fadeTo(getRandomExcuse());
+  }, 7000);
+
 })(jQuery);
